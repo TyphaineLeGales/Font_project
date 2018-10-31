@@ -31,8 +31,15 @@ function draw() {
     rect(mouseX-50, mouseY-50, 600, 50);
     yellow ="";
       fill(255, 255, 0, 255-n*2);
-      text(sorry, mouseX  + 75 , mouseY+n);
-      text(both, mouseX+422, mouseY-40);
+      text(both, mouseX  + 415 , mouseY+n);
+      text(both, mouseX  + 75 , mouseY+n);
+      text(both, mouseX  + 200 , mouseY+n);
+      text(both, mouseX  + 300 , mouseY+n);
+      text(both, mouseX  + 75 , mouseY-100+n);
+      text(both, mouseX  + 200 , mouseY-100+n);
+      text(both, mouseX  + 300 , mouseY-100+n);
+      text(both, mouseX  + 400 , mouseY-100+n);
+      text(both, mouseX  -15 , mouseY-100+n);
 
   } else {
     //road
