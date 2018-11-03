@@ -1,7 +1,9 @@
 var myFont;
+var fontTwo;
 var n=0;
 function preload() {
-  myFont = loadFont('assets/SharpSansNo1-Bold.otf');
+  myFont = loadFont('assets/SharpSansNo1-BoldItalic.otf');
+  fontTwo = loadFont('assets/agipo_bold.otf');
 }
 
 function setup() {
@@ -41,9 +43,19 @@ function draw() {
       text(both, mouseX  + 400 , mouseY-100+n);
       text(both, mouseX  -15 , mouseY-100+n);
 
-  } else {
+  } else if(mouseY > height/2) {
+    background(255);
+    fill(21,9,124);
+    textFont(fontTwo);
+    text("And be one traveler, LONG I STOOD", 500,300);
+    stroke(21,9,124);
+    line(500, 310, 700+n*4, 310);
+    yellow ="";
+    sentence="";
+  }
+   else {
     //road
-    background(21,9,124);
+  background(21,9,124);
   fill(255);
   noStroke();
   quad(mouseX + 90, mouseY+20, mouseX+130, mouseY+20, 300, 600, 150, 600);
